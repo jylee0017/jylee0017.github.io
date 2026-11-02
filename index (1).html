@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f6fa">
+  <meta name="description" content="Juyeon Lee is a post-master's researcher at the Korea Brain Research Institute studying auditory neural coding, neural population activity, and sensory-guided behavior.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Juyeon Lee | Neuroscience Researcher">
+  <meta property="og:description" content="Auditory neural coding, neural population representations, and sensory-guided behavior.">
+  <meta property="og:url" content="https://jylee0017.github.io/">
+  <meta property="og:image" content="https://jylee0017.github.io/juyeon.jpg">
+  <link rel="canonical" href="https://jylee0017.github.io/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <title>Juyeon Lee | Neuroscience Researcher</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Juyeon Lee",
+    "url": "https://jylee0017.github.io/",
+    "jobTitle": "Post-Master's Researcher",
+    "affiliation": { "@type": "Organization", "name": "Korea Brain Research Institute" },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "Daegu Gyeongbuk Institute of Science and Technology" },
+      { "@type": "CollegeOrUniversity", "name": "Hanyang University" }
+    ],
+    "sameAs": [
+      "https://github.com/jylee0017",
+      "https://www.linkedin.com/in/juyeonnies/"
+    ]
+  }
+  </script>
+  <style>
+    /* Change the colors here. All major components use these shared variables. */
+    :root {
+      color-scheme: light;
+      --bg: #f3f6fa;
+      --sidebar-bg: #edf2f8;
+      --paper: #fff;
+      --ink: #223448;
+      --muted: #67788c;
+      --blue: #294b70;
+      --blue-dark: #1f3a58;
+      --blue-soft: #eaf1f8;
+      --blue-pale: #f6f9fd;
+      --line: #dce5ee;
+      --serif: "Newsreader", "Iowan Old Style", Georgia, serif;
+      --sans: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 24px; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 14px; line-height: 1.75; -webkit-font-smoothing: antialiased; }
+    a { color: inherit; text-decoration: none; }
+    a:hover { color: var(--blue); }
+    a:focus-visible { outline: 3px solid #7ba7cf; outline-offset: 3px; border-radius: 3px; }
+    ::selection { background: #cadced; color: var(--blue-dark); }
+    .layout { max-width: 1310px; min-height: 100vh; margin: 0 auto; display: grid; grid-template-columns: 252px minmax(0, 1fr); box-shadow: 0 0 40px rgba(22, 52, 79, .025); }
+    .sidebar { background: var(--sidebar-bg); border-right: 1px solid var(--line); padding: 32px 22px 26px; }
+    .sidebar-inner { position: sticky; top: 28px; display: flex; flex-direction: column; min-height: calc(100vh - 56px); }
+    .brand { display: flex; justify-content: center; align-items: center; gap: 9px; color: var(--blue); text-transform: uppercase; font-weight: 700; font-size: 9px; letter-spacing: .14em; }
+    .brand-icon { width: 25px; height: 25px; display: grid; place-items: center; border: 1px solid #93aec8; border-radius: 50%; font-family: var(--serif); font-weight: 600; font-size: 17px; letter-spacing: -.03em; }
+    .profile { display: flex; flex-direction: column; align-items: center; text-align: center; }
+    .photo { width: 116px; height: 116px; margin-top: 35px; border: 4px solid white; border-radius: 50%; overflow: hidden; background: linear-gradient(150deg, #dce7f2, #b9ccdf); position: relative; box-shadow: 0 8px 24px rgba(42,77,112,.10); }
+    .photo-fallback { position: absolute; inset: 0; display: grid; place-items: center; font: 500 39px var(--serif); color: #6988a5; }
+    .photo img { display: block; position: relative; width: 100%; height: 100%; object-fit: cover; object-position: center 35%; }
+    .photo img[hidden] { display: none; }
+    .profile-name { margin: 19px 0 8px; font: 500 32px/1.1 var(--serif); letter-spacing: -.025em; }
+    .profile-role { color: var(--blue); font-size: 12px; font-weight: 700; margin: 0; }
+    .profile-affil { font-size: 11.5px; color: var(--muted); line-height: 1.65; margin: 5px 0 0; }
+    .side-divider { height: 1px; width: 100%; background: var(--line); margin: 26px 0 18px; }
+    .nav-label { font-size: 9.5px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: #879aac; margin: 0 0 7px; }
+    .nav { display: grid; gap: 1px; }
+    .nav a { display: block; border-radius: 6px; padding: 7px 9px; margin-left: -9px; color: #556a81; font-size: 12px; font-weight: 600; transition: background .15s, color .15s; }
+    .nav a:hover { background: #dfeaf5; color: var(--blue-dark); }
+    .sidebar-bottom { margin-top: auto; padding-top: 22px; text-align: center; }
+    .social-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 6px; }
+    .social-links a { background: #fff; border: 1px solid #d6e1ec; border-radius: 7px; color: var(--blue); padding: 6px 9px; font-size: 11px; font-weight: 700; }
+    .social-links a:hover { color: white; background: var(--blue); border-color: var(--blue); }
+    .email { display: inline-block; margin-top: 13px; font-size: 10.5px; color: #566d84; overflow-wrap: anywhere; }
+    .copyright { font-size: 10px; color: #92a2b1; margin: 12px 0 0; }
+    .main { min-width: 0; padding: 0 clamp(28px, 6vw, 90px) 34px; background: var(--paper); }
+    .hero { padding: 76px 0 65px; border-bottom: 1px solid var(--line); }
+    .eyebrow { display: flex; align-items: center; gap: 10px; margin: 0 0 19px; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; color: var(--blue); }
+    .eyebrow::before { content: ""; display: block; width: 22px; height: 1px; background: var(--blue); }
+    h1,h2,h3,p { margin-top: 0; }
+    h1 { max-width: 760px; font: 400 clamp(44px, 5vw, 66px)/1.12 var(--serif); letter-spacing: -.037em; margin-bottom: 22px; }
+    h1 em { color: var(--blue); font-weight: 400; }
+    .intro { max-width: 710px; color: #516376; font-size: 15px; line-height: 1.9; margin: 0 0 14px; }
+    .intro strong { color: var(--ink); font-weight: 700; }
+    .interest-inline { max-width: 710px; margin: 22px 0 0; padding: 14px 18px; border-left: 3px solid #7b9ebe; background: var(--blue-pale); font-size: 13px; color: #4e6277; line-height: 1.9; }
+    .interest-inline strong { color: var(--blue-dark); margin-right: 5px; }
+    .fellowship-note { color: #708298; font-size: 12px; margin: 15px 0 0; }
+    .actions { display: flex; align-items: center; flex-wrap: wrap; gap: 9px; margin-top: 25px; }
+    .button { display: inline-flex; justify-content: center; align-items: center; border-radius: 7px; padding: 9px 15px; font-size: 12px; font-weight: 700; transition: transform .15s, background .15s; }
+    .button:hover { transform: translateY(-2px); }
+    .button-primary { color: #fff; background: var(--blue); border: 1px solid var(--blue); }
+    .button-primary:hover { background: var(--blue-dark); color: #fff; }
+    .button-secondary { color: var(--blue); background: white; border: 1px solid #cddae8; }
+    .button-secondary:hover { background: var(--blue-soft); }
+    .section { padding: 57px 0 60px; border-bottom: 1px solid var(--line); }
+    .section-head { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; margin-bottom: 26px; }
+    h2 { font: 500 34px/1.25 var(--serif); letter-spacing: -.025em; margin: 0; }
+    .section-num { font-size: 10px; color: #7792ad; font-weight: 700; letter-spacing: .12em; white-space: nowrap; }
+    .education-list { display: grid; gap: 16px; }
+    .education-entry { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 10px 18px; padding: 19px 22px; border: 1px solid var(--line); border-radius: 12px; background: var(--blue-pale); }
+    .education-entry h3 { font-size: 15px; font-weight: 700; line-height: 1.5; margin-bottom: 4px; }
+    .education-entry p { font-size: 12px; color: var(--muted); margin: 0; }
+    .entry-date { font-size: 11px; color: var(--blue); font-weight: 700; white-space: nowrap; padding-top: 3px; }
+    .education-entry .honor { color: #4f7193; font-weight: 600; }
+    .research-primary { border: 1px solid #d5e2ef; background: #f8fafd; border-radius: 13px; padding: 26px 27px 17px; }
+    .research-primary h3 { font: 500 23px/1.27 var(--serif); letter-spacing: -.015em; margin-bottom: 4px; }
+    .lab-meta { font-size: 12px; color: var(--muted); margin: 0 0 18px; }
+    .role-row { display: flex; justify-content: space-between; gap: 10px; padding: 9px 0; border-top: 1px solid #e3ebf3; font-size: 12.5px; }
+    .role-row strong { font-weight: 700; }
+    .role-row span { font-size: 11px; color: var(--blue); white-space: nowrap; }
+    .project-list { display: grid; gap: 0; margin-top: 15px; }
+    .project { padding: 15px 0; border-top: 1px solid #e3ebf3; }
+    .project h4 { color: #25496f; font-size: 13.5px; margin: 0 0 3px; }
+    .project p { font-size: 12.5px; color: #5e7082; line-height: 1.8; margin: 0; }
+    .earlier-title { font-size: 10px; color: #7d94aa; letter-spacing: .13em; text-transform: uppercase; font-weight: 700; margin: 28px 0 12px; }
+    .earlier { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 5px 20px; padding: 14px 0; border-bottom: 1px solid var(--line); }
+    .earlier:last-child { border: 0; }
+    .earlier strong { display: block; font-size: 13px; line-height: 1.5; }
+    .earlier p { color: var(--muted); font-size: 12px; margin: 3px 0 0; line-height: 1.7; }
+    .earlier .entry-date { padding-top: 2px; }
+    .pub { border-bottom: 1px solid var(--line); padding: 6px 0 24px; margin-bottom: 20px; }
+    .pub:last-child { border-bottom: 0; margin-bottom: 0; padding-bottom: 0; }
+    .pub-status { display: inline-block; color: var(--blue); background: var(--blue-soft); border: 1px solid #d7e3ef; border-radius: 5px; padding: 3px 8px; font-size: 10px; font-weight: 700; margin-bottom: 11px; }
+    .pub h3 { font: 500 21px/1.4 var(--serif); letter-spacing: -.015em; margin-bottom: 6px; }
+    .pub p { color: var(--muted); font-size: 12px; margin: 0; line-height: 1.75; }
+    .note { margin: -9px 0 23px; font-size: 12px; color: var(--muted); }
+    .presentation { display: grid; grid-template-columns: 76px minmax(0,1fr); gap: 16px; padding: 17px 0; border-bottom: 1px solid var(--line); }
+    .presentation:first-of-type { padding-top: 3px; }
+    .presentation:last-child { border-bottom: none; }
+    .presentation .date { font-size: 11px; color: var(--blue); font-weight: 700; padding-top: 2px; }
+    .presentation h3 { font-size: 13.5px; font-weight: 700; line-height: 1.55; margin-bottom: 3px; }
+    .presentation p { font-size: 12px; color: var(--muted); margin-bottom: 6px; }
+    .award { display: inline-block; background: #ecf2f9; color: #315a80; border-radius: 5px; padding: 2px 8px; font-size: 10px; font-weight: 700; margin-right: 5px; margin-top: 2px; }
+    .service-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 11px; }
+    .service { border: 1px solid var(--line); border-radius: 11px; padding: 18px 19px; background: #fff; }
+    .service .year { font-size: 10.5px; font-weight: 700; color: #6f8fab; display: block; margin-bottom: 8px; }
+    .service h3 { font-size: 13px; line-height: 1.45; font-weight: 700; margin-bottom: 4px; }
+    .service p { color: var(--muted); font-size: 11.5px; line-height: 1.6; margin: 0; }
+    .footer { display: flex; justify-content: space-between; gap: 16px; color: #91a0b1; font-size: 10.5px; padding-top: 24px; }
+    .footer a { color: var(--blue); text-decoration: underline; text-underline-offset: 3px; }
+    @media(max-width:1040px) {
+      .layout { grid-template-columns: 225px minmax(0,1fr); }
+      .sidebar { padding-left: 17px; padding-right: 17px; }
+      .main { padding-left: 39px; padding-right: 39px; }
+    }
+    @media(max-width:740px) {
+      .layout { display: block; }
+      .sidebar { padding: 18px 21px 17px; border-right: 0; border-bottom: 1px solid var(--line); }
+      .sidebar-inner { min-height: 0; position: static; display: grid; grid-template-columns: 74px minmax(0,1fr); align-items: center; column-gap: 15px; }
+      .brand { justify-content: flex-start; grid-column: 1/-1; margin-bottom: 14px; font-size: 9px; }
+      .profile { display: contents; }
+      .photo { margin: 0; width: 74px; height: 74px; border-width: 3px; grid-column: 1; }
+      .photo-fallback { font-size: 26px; }
+      .profile-copy { grid-column: 2; text-align: left; }
+      .profile-name { margin: 0 0 3px; font-size: 27px; }
+      .profile-role { font-size: 11px; }
+      .profile-affil { font-size: 10.5px; }
+      .side-divider,.nav-label,.nav,.copyright { display:none; }
+      .sidebar-bottom { grid-column: 1/-1; padding-top: 12px; text-align: left; }
+      .social-links { justify-content: flex-start; }
+      .email { margin-top: 9px; }
+      .main { padding: 0 23px 24px; }
+      .hero { padding: 49px 0 49px; }
+      h1 { font-size: clamp(40px, 10vw, 58px); }
+      .intro { font-size: 14px; }
+      .section { padding: 42px 0 45px; }
+      h2 { font-size: 29px; }
+      .research-primary { padding: 19px 18px 12px; }
+      .research-primary h3 { font-size: 21px; }
+      .education-entry { padding: 16px; }
+      .service-grid { grid-template-columns: 1fr; }
+      .footer { flex-direction: column; }
+    }
+    @media(max-width:420px) {
+      .education-entry, .earlier { grid-template-columns: 1fr; gap: 1px; }
+      .entry-date { padding: 0; }
+      .role-row { flex-direction: column; gap: 0; }
+      .presentation { grid-template-columns: 64px 1fr; gap: 12px; }
+    }
+    @media(prefers-reduced-motion:reduce) { html{scroll-behavior:auto} *,*::before,*::after {transition:none!important} }
+  </style>
+</head>
+<body>
+  <div class="layout" id="top">
+    <aside class="sidebar" aria-label="Profile and site navigation">
+      <div class="sidebar-inner">
+        <a class="brand" href="#top" aria-label="Back to top"><span class="brand-icon">J</span> Academic Profile</a>
+        <div class="profile">
+          <div class="photo">
+            <span class="photo-fallback" aria-hidden="true">JL</span>
+            <!-- Retain juyeon.jpg next to index.html in the repository. -->
+            <img id="profile-photo" src="juyeon.jpg" alt="Portrait of Juyeon Lee">
+          </div>
+          <div class="profile-copy">
+            <p class="profile-name">Juyeon Lee</p>
+            <p class="profile-role">Post-Master's Researcher</p>
+            <p class="profile-affil">Auditory Processing Lab<br>Korea Brain Research Institute<br>Daegu, South Korea</p>
+          </div>
+        </div>
+        <div class="side-divider" aria-hidden="true"></div>
+        <p class="nav-label">Navigate</p>
+        <nav class="nav" aria-label="Page sections">
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#experience">Research Experience</a>
+          <a href="#publications">Publications</a>
+          <a href="#presentations">Selected Presentations</a>
+          <a href="#service">Leadership &amp; Service</a>
+        </nav>
+        <div class="sidebar-bottom">
+          <div class="social-links">
+            <a href="JuyeonLee_CV.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open CV PDF">CV ↗</a>
+            <a href="https://github.com/jylee0017" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/juyeonnies/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          </div>
+          <a class="email" href="mailto:jyleejuyeon0017@gmail.com">jyleejuyeon0017@gmail.com</a>
+          <p class="copyright">© 2026 Juyeon Lee</p>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <!-- ABOUT: Research interests and fellowship appear here, not as separate sections. -->
+      <section class="hero" id="about" aria-labelledby="about-title">
+        <p class="eyebrow">Auditory neuroscience · Neural coding · Behavior</p>
+        <h1 id="about-title">Understanding how the brain <em>represents sound.</em></h1>
+        <p class="intro">I am a post-master's researcher in <strong>Dr. Gunsoo Kim's Auditory Processing Lab</strong> at the Korea Brain Research Institute (KBRI). My work investigates how neural representations of vocalizations change across different acoustic environments.</p>
+        <p class="intro">I am interested in how neural populations encode behaviorally relevant sensory information and how these representations contribute to perception, decisions, and actions.</p>
+        <div class="interest-inline"><strong>Research interests:</strong> Neural population coding · Auditory and sensory processing · Sensorimotor integration · Computational neuroscience</div>
+        <p class="fellowship-note">Junior Researcher Fellowship, KBRI (2025–2028)</p>
+        <div class="actions">
+          <a href="JuyeonLee_CV.pdf" class="button button-primary" target="_blank" rel="noopener noreferrer">View CV (PDF) ↗</a>
+          <a href="mailto:jyleejuyeon0017@gmail.com" class="button button-secondary">Get in touch ↗</a>
+        </div>
+      </section>
+
+      <section class="section" id="education" aria-labelledby="education-title">
+        <div class="section-head"><h2 id="education-title">Education</h2><span class="section-num">01</span></div>
+        <div class="education-list">
+          <article class="education-entry">
+            <div><h3>M.S. in Brain Science</h3><p>Daegu Gyeongbuk Institute of Science and Technology (DGIST)</p><p>Advisor: Gunsoo Kim, Ph.D. · Graduate research conducted at KBRI</p></div>
+            <span class="entry-date">2022–2024</span>
+          </article>
+          <article class="education-entry">
+            <div><h3>B.S. in Software Engineering</h3><p>Hanyang University <span class="honor">· Cum Laude</span></p></div>
+            <span class="entry-date">2017–2022</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="experience" aria-labelledby="experience-title">
+        <div class="section-head"><h2 id="experience-title">Research Experience</h2><span class="section-num">02</span></div>
+        <article class="research-primary">
+          <h3>Auditory Processing Lab</h3>
+          <p class="lab-meta">Korea Brain Research Institute (KBRI) · Advisor: Gunsoo Kim, Ph.D.</p>
+          <div class="role-row"><strong>Post-Master's Researcher</strong><span>Sep 2024 – Present</span></div>
+          <div class="role-row"><strong>Graduate Researcher</strong><span>2022 – 2024</span></div>
+          <div class="project-list">
+            <div class="project"><h4>Neural Coding of Vocalizations in Background Noise</h4><p>Investigated how different background noise types affect neural encoding of vocalizations in the mouse inferior colliculus using single-unit recordings and neural response analyses.</p></div>
+            <div class="project"><h4>Awake Neuropixels Recordings &amp; Spike Sorting</h4><p>Recorded neural activity in awake mice using Neuropixels probes and established a Kilosort-based workflow for spike sorting and manual curation.</p></div>
+            <div class="project"><h4>Auditory Behavioral Experiments</h4><p>Independently developed a MonkeyLogic-based Go/No-Go tone-discrimination task, built the behavioral apparatus, and assessed discrimination performance in mice during locomotion and rest.</p></div>
+          </div>
+        </article>
+        <p class="earlier-title">Earlier Research</p>
+        <div class="earlier"><div><strong>Research Intern · Cognitive Behavioral Neuroscience Lab, KBRI</strong><p>Songbird behavioral analysis using DeepLabCut · Advisor: Satoshi Kojima, Ph.D.</p></div><span class="entry-date">Mar–Aug 2022</span></div>
+        <div class="earlier"><div><strong>Research Intern · Auditory Processing Lab, KBRI</strong><p>Auditory stimulus generation and neural stimulus reconstruction in noise</p></div><span class="entry-date">Jul 2021–Feb 2022</span></div>
+        <div class="earlier"><div><strong>Undergraduate Research &amp; Data Science</strong><p>AI Design Lab, Hanyang University; Data Science Lab, KT-affiliated research institute</p></div><span class="entry-date">2020</span></div>
+      </section>
+
+      <section class="section" id="publications" aria-labelledby="publications-title">
+        <div class="section-head"><h2 id="publications-title">Publications &amp; Manuscripts</h2><span class="section-num">03</span></div>
+        <p class="note">Manuscript statuses reflect current work and do not imply publication or acceptance.</p>
+        <article class="pub">
+          <span class="pub-status">In preparation</span>
+          <h3>Neural sound processing in noise in the mouse auditory midbrain</h3>
+          <p><strong>Juyeon Lee</strong>, Jisoo Han, Gunsoo Kim</p>
+        </article>
+        <article class="pub">
+          <span class="pub-status">Submitted · 2026</span>
+          <h3>A rebound from pre-dawn singing suppression drives intense morning singing in captive zebra finches</h3>
+          <p>E. B. dos Santos, C. Mori, Y. Kim, J. Kim, R. O. Tachibana, O.-Y. Jeong, <strong>J. Lee</strong>, S. Kojima</p>
+          <p>Submitted to <em>Communications Biology</em></p>
+        </article>
+      </section>
+
+      <section class="section" id="presentations" aria-labelledby="presentations-title">
+        <div class="section-head"><h2 id="presentations-title">Selected Presentations</h2><span class="section-num">04</span></div>
+        <div class="presentation"><span class="date">Dec 2024</span><div><h3>Neural sound processing in noise in the mouse auditory midbrain</h3><p>KBRI Research Day · Poster presentation</p><span class="award">Excellent Poster Prize</span></div></div>
+        <div class="presentation"><span class="date">Oct 2024</span><div><h3>Neural sound processing in noise in the mouse auditory midbrain: Context-Dependent Signal Extraction in IC Neurons</h3><p>Korean Society for Brain and Neural Sciences (KSBNS)</p></div></div>
+        <div class="presentation"><span class="date">Jul 2024</span><div><h3>Neural sound processing in noise in the mouse auditory midbrain: Dynamic Noise Sensitivity Across Acoustic Contexts</h3><p>International Brain Initiative (IBI) Conference</p><span class="award">Excellent Poster Prize</span><span class="award">Young Investigators' Talk</span></div></div>
+        <div class="presentation"><span class="date">Aug 2023</span><div><h3>Neural sound processing in noise in the mouse auditory midbrain: Noise-Resistant Encoding of Natural Sounds</h3><p>International Brain Initiative (IBI) Conference</p><span class="award">Excellent Poster Prize</span></div></div>
+      </section>
+
+      <section class="section" id="service" aria-labelledby="service-title">
+        <div class="section-head"><h2 id="service-title">Leadership &amp; Service</h2><span class="section-num">05</span></div>
+        <div class="service-grid">
+          <article class="service"><span class="year">2023–2025</span><h3>Letter Translation Volunteer</h3><p>World Vision</p></article>
+          <article class="service"><span class="year">Feb–Jun 2024</span><h3>Peer Mentor for International Students</h3><p>DGIST Buddy Program</p></article>
+          <article class="service"><span class="year">2022</span><h3>Mentee Leader</h3><p>Korean-American Women in Science and Engineering (KWiSE) Mentoring</p></article>
+          <article class="service"><span class="year">2020</span><h3>Mentee Leader</h3><p>WISET · KT Mentoring Program</p></article>
+          <article class="service"><span class="year">2020–2022</span><h3>Engineering Outreach Speaker</h3><p>Women's Engineering Research Workshop (WISET)</p></article>
+        </div>
+      </section>
+      <footer class="footer"><span>Juyeon Lee · Korea Brain Research Institute</span><span>Updated November 2026 · <a href="#top">Back to top ↑</a></span></footer>
+    </main>
+  </div>
+  <script>
+    const photo = document.getElementById('profile-photo');
+    if (photo) {
+      const onMissing = () => { photo.hidden = true; };
+      photo.addEventListener('error', onMissing);
+      if (photo.complete && photo.naturalWidth === 0) onMissing();
+    }
+  </script>
+</body>
+</html>
